@@ -1,0 +1,19 @@
+{
+  "name": "personalPortfolio",
+  "version": "0.0.1",
+  "description": "personal portfolio site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jacobdlewis/personalPortfolio.git"
+  },
+  "author": "jacob lewis <jacobdlewis@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jacobdlewis/personalPortfolio/issues"
+  },
+  "homepage": "https://github.com/jacobdlewis/personalPortfolio"
+}
