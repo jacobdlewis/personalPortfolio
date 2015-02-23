@@ -28,9 +28,20 @@ module.exports = function(grunt) {
           'public/css/main.css': 'app/styles/main.scss'
         }
       }
-    }
+    },
+    watch: {
+      scripts: {
+        files: ['app/**', '!**/*_.jade'],
+        tasks: ['build'],
+        options: {
+          spawn: false,
+    },
+  },
+},
   });
 
   grunt.registerTask('default', []);
   grunt.registerTask('build', ['clean', 'copy', 'jade', 'sass']);
+  grunt.registerTask('watch', ['build']);
+
 };
