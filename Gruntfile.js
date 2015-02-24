@@ -10,8 +10,7 @@ module.exports = function(grunt) {
       main: {
         files: [
           {expand: true, cwd: 'app/', src: ['**', '!**/*.jade',
-          '!**/*.{sass,scss}'], dest: 'public/', filter: 'isFile'}
-        ]
+          '!**/*.{sass,scss}', '**/*.js'], dest: 'public/', filter: 'isFile'}]
       }
     },
     jade: {
@@ -30,18 +29,22 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      scripts: {
-        files: ['app/**', '!**/*_.jade'],
-        tasks: ['build'],
-        options: {
-          spawn: false,
-    },
+      jade: {
+        files: ['app/**/*.jade', '!**/*_.jade'],
+        tasks: ['jade']
+      },
+      sass: {
+        files: ['app/styles/*.scss'],
+        tasks: ['sass']
+      },
+      javascript: {
+        files: ['app/**/*', '!app/**/*_.jade'],
+        tasks: ['copy']
+      },
   },
-},
-  });
+});
 
   grunt.registerTask('default', []);
   grunt.registerTask('build', ['clean', 'copy', 'jade', 'sass']);
-  grunt.registerTask('watch', ['build']);
 
 };
