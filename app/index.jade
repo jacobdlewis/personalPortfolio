@@ -10,16 +10,22 @@ html(lang='en')
     link(rel='stylesheet' href='css/main.css')
   body
     div.container
-      header.page-header
-        ul.nav.nav-pills.pull-right
-          li.active
-            a(href='#') Home
-          li
-            a(href='#') About
-          li
-            a(href='#') Portolio
-        h1 Jacob D Lewis
+      header.page-header.clearfix
+        h1.pull-left Welcome
+        h3.pull-right jacobdlewis
       div.jumbotron
-        h2 Get to know me
-        p.lead I'm a Florida native who landed in Nashville by way of Birmingham, AL and Madison, WI. I'm currently a full-time student at Nashville Software School, a coding bootcamp that teaches front-end web development.
-        p.lead When I'm not coding, I'm enjoying trashy true crime TV with my lovely partner Emily, and my dog Lucy.
+        h2 Thanks for visiting. Stay a while.
+        img.center-block.profile_image(src='https://scontent-atl.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/1512678_10152179832173659_972064717_n.jpg?oh=599ea64c29fd8a94f172a7bd65ad1507&oe=5580288C')
+      div.row
+        div.col-xs-4
+          h2 Developer
+          p I'm an aspiring web developer currently working in HTML, CSS, and JavaScript. Over the next few months, I'll be expanding my skillset to the backend with Ruby on Rails.
+        div.col-xs-4
+          h2 Student
+          p I'm enrolled as a full-time student at Nashville Software School, a bootcamp-style vocational school focused on training junior developers.
+        div.col-xs-4
+          h2 Human Being
+          p
+            | When I'm not programming, blogging, or studying, you can find me playing disc golf or video games. My current fixation is
+            a(href='http://www.dontstarvegame.com/') Don't Starve
+            | , a lovely Tim Burton-esque survival game.
