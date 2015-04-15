@@ -1,16 +1,43 @@
-h1 {
-  span {
-    color: limegreen;
-  }
-}
-ul {
-  background-color: lightgrey;
+.breadcrumb {
+  margin-top: 30px;
+  margin-bottom: 0;
 }
 .jumbotron > h2 {
   text-align: center;
+  margin-top: 30px !important;
+  margin-bottom: 0 !important;
 }
 .profile_image {
   height: 200px;
   width: 200px;
   border-radius: 50%;
+}
+.about-me {
+  margin-bottom: 20px;
+  .about-me-content {
+    text-align: justify;
+  }
+}
+
+.skills {
+  h2 {
+    text-align: center;
+  }
+  ul {
+    display: block;
+    list-style-type: none;
+    text-align: center;
+  }
+  li {
+    font-size: 20px;
+  }
+
+}
+.active {
+  font-weight: bold;
+}
+.breadcrumb {
+  li > a {
+    color: black;
+  }
 }

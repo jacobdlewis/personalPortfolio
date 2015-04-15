@@ -1,5 +1,4 @@
 {
-
   "name": "personalPortfolio",
   "version": "0.0.1",
   "description": "personal portfolio site",
@@ -23,7 +22,8 @@
     "grunt-contrib-copy": "^0.8.0",
     "grunt-contrib-jade": "^0.14.1",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-sass": "^0.18.0",
-    "load-grunt-tasks": "^3.1.0"
+    "grunt-sass": "^0.18.1",
+    "load-grunt-tasks": "^3.1.0",
+    "node-sass": "^2.1.1"
   }
 }
