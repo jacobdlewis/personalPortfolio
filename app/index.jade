@@ -7,6 +7,7 @@ html(lang='en')
     meta(name='viewport' content='width=device-width, initial-scale=1')
     link(rel='stylesheet' href='../bower_components/bootstrap/dist/css/bootstrap.css')
     link(rel='stylesheet' href='../bower_components/bootstrap/dist/css/bootstrap-theme.css')
+    link(rel='stylesheet' href='/app/assets/font-awesome-4.3.0/css/font-awesome.min.css')
     link(rel='stylesheet' href='css/main.css')
   body
     div.container
@@ -14,14 +15,14 @@ html(lang='en')
         h1.pull-left Jacob Lewis.<small>web_developer</small>
         ol.pull-right.breadcrumb
           li
-            a(href="#").active About
+            a(href="#about_me").active About
           li
-            a(href="#") Skills
+            a(href="#skills") Skills
           li
-            a(href="../projects.html") Bit Blaster
+            a(href="#bit_blaster") Bit Blaster
           li
-            a(href="#") Contact
-      div.row.about-me
+            a(href="#contact") Contact
+      div.row.about-me#about_me
         div.col-xs-12
           div.col-xs-4
             img.center-block.profile_image(src="assets/profile_photo.png")
@@ -29,14 +30,16 @@ html(lang='en')
             h2.pull-right About Me
             p I'm a web developer working in HTML, CSS, JavaScript and Ruby. I'm currently enrolled as a full-time student at the Nashville Software School, a bootcamp-style vocational school focused on training junior developers. I'm new to Nashville, coming by way of Madison, WI and Birminghan, AL. When I'm not working on development projects, you can find me on the disc golf course or playing a board game with friends.
       hr
-      .row.bit-blaster
+      .row.bit-blaster#bit_blaster
         .col-xs-6
           h2 Bit Blaster
-          p Bit Blaster is an arcade-style space shooter built with the Phaser.js game engine. I completed Bit Blaster in around two weeks while studying at Nashville Software School. I created the game assets with GIMP, and high scores are recorded using Firebase. You can play the game here and try to get into the top 10 leaderboard.
+          p Bit Blaster is an arcade-style space shooter built with the Phaser.js game engine. I completed Bit Blaster in around two weeks while studying at Nashville Software School. I created the game assets with GIMP, and high scores are recorded using Firebase. 
+            a(href="https://bitblaster.firebaseapp.com/") Play the game.
         .col-xs-6
-          img.pull-right(src="assets/bit_blaster.png")
+          a(href="https://bitblaster.firebaseapp.com/")
+            img.pull-right(src="assets/bit_blaster.png")
       hr
-      h2 Skills
+      h2#skills Skills
       div.row.skills.jumbotron
         div.col-xs-3
           ul
@@ -63,7 +66,21 @@ html(lang='en')
             li Chai
             li Phantom.js
       div.row.contact
-        h2.pull-right Contact
-        .col
-
-        
+        h2.pull-right.clearfix#contact Contact
+        .col-xs-12
+          ul
+            li
+              a(href="https://github.com/jacobdlewis")
+                i.fa.fa-github.fa-5x
+            li
+              a(href="https://twitter.com/?lang=en")
+                i.fa.fa-twitter.fa-5x
+            li
+              a(href="https://www.linkedin.com/in/jacoblewis")
+                i.fa.fa-linkedin.fa-5x
+            li
+              a(href="mailto:jacobdlewis@gmail.com")
+                i.fa.fa-envelope.fa-5x
+            li
+              a(href="https://medium.com/@jacobdlewis")
+                i.fa.fa-medium.fa-5x
