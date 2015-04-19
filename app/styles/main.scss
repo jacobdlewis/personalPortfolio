@@ -11,11 +11,7 @@
     font-weight: bold;
   }
 }
-.jumbotron {
-  text-align: center;
-  margin-top: 90px !important;
-  margin-bottom: 0 !important;
-}
+
 .about-me {
   margin-bottom: 20px;
   h2 {
@@ -50,9 +46,13 @@
   }
 }
 .skills {
+  .jumbotron {
+  text-align: center;
+  margin-top: 40px !important;
+  margin-bottom: 0 !important;
+}
   h2 {
-    text-align: center;
-    margin-bottom: 30px;
+    text-align: right;
   }
   ul {
     display: block;
