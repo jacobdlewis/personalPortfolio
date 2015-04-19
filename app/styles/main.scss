@@ -1,3 +1,6 @@
+.container {
+  margin: 0 200px;
+  }
 .breadcrumb {
   margin-top: 30px;
   margin-bottom: 0;
@@ -10,16 +13,18 @@
 }
 .jumbotron {
   text-align: center;
-  margin-top: 80px !important;
+  margin-top: 90px !important;
   margin-bottom: 0 !important;
 }
 .about-me {
   margin-bottom: 20px;
-
-  .about-me-content {
+  h2 {
     text-align: right;
   }
-
+  .about-me-content {
+    text-align: right;
+    font-weight: 400;
+  }
   .profile_image {
   height: 400px;
   width: 400px;
@@ -28,6 +33,7 @@
 
   p {
     font-size: 22px;
+    font-weight: default;
     margin-top: 80px;
   }
 }
@@ -46,6 +52,7 @@
 .skills {
   h2 {
     text-align: center;
+    margin-bottom: 30px;
   }
   ul {
     display: block;
@@ -69,3 +76,71 @@
     width: 150px;
   }
 }
+
+@media (max-width: 600px) {
+    .container {
+      margin: 0;
+    }
+    .about-me {
+      h2 {
+        text-align: center;
+      }
+      img {
+        max-height: 150px;
+        max-width: 150px;
+        margin-top: 20px;
+      }
+      p {
+        margin-top: 20px;
+        font-size: 16px;
+        text-align: justify;
+      }
+    }
+    .bit-blaster {
+      h2 {
+        text-align: center;
+        margin-bottom: 10px
+      }
+      img {
+        max-height: 150px;
+        max-width: 150px;
+        margin-right: 20%;
+      }
+      p {
+        margin-top: 20px;
+        font-size: 16px;
+        text-align: justify;
+      }
+    }
+    .skills {
+      #skills {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      ul {
+        padding: 0;
+        li {
+          text-align: center;
+        }
+      }
+      .jumbotron {
+        margin-top: 10px !important;
+        margin-left: 10px;
+        padding: 5px 15px;
+        font-size: 12px;
+        font-weight: default;
+      }
+    }
+    .contact {
+      ul {
+        padding: 0;
+      }
+    }
+
+    .breadcrumb {
+      display: none;
+    }
+  }
