@@ -14,18 +14,31 @@ html(lang='en')
         h1.pull-left Jacob Lewis.<small>web_developer</small>
         ol.pull-right.breadcrumb
           li
-            a(href="#").active Home
+            a(href="#").active About
           li
-            a(href="../projects.html") Projects
+            a(href="#") Skills
+          li
+            a(href="../projects.html") Bit Blaster
+          li
+            a(href="#") Contact
       div.row.about-me
-        div.col-xs-10.col-xs-offset-1
+        div.col-xs-12
           div.col-xs-4
-            img.center-block.profile_image(src="https://scontent-atl.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/1512678_10152179832173659_972064717_n.jpg?oh=599ea64c29fd8a94f172a7bd65ad1507&oe=5580288C")
+            img.center-block.profile_image(src="assets/profile_photo.png")
           div.col-xs-7.col-xs-offset-1.about-me-content
-            h2 About Me
+            h2.pull-right About Me
             p I'm a web developer working in HTML, CSS, JavaScript and Ruby. I'm currently enrolled as a full-time student at the Nashville Software School, a bootcamp-style vocational school focused on training junior developers. I'm new to Nashville, coming by way of Madison, WI and Birminghan, AL. When I'm not working on development projects, you can find me on the disc golf course or playing a board game with friends.
+      hr
+      .row.bit-blaster
+        .col-xs-6
+          h2 Bit Blaster
+          p Bit Blaster is an arcade-style space shooter built with the Phaser.js game engine. I completed Bit Blaster in around two weeks while studying at Nashville Software School. I created the game assets with GIMP, and high scores are recorded using Firebase. You can play the game here and try to get into the top 10 leaderboard.
+        .col-xs-6
+          img.pull-right(src="assets/bit_blaster.png")
+      hr
+      h2 Skills
       div.row.skills.jumbotron
-        div.col-xs-3.col-xs-offset-1
+        div.col-xs-3
           ul
             li HTML
             li CSS
@@ -43,7 +56,14 @@ html(lang='en')
             li Angular.js
             li TDD
             li Git
+        div.col-xs-3
+          ul
+            li Karma
+            li Mocha
+            li Chai
+            li Phantom.js
       div.row.contact
-        h2 contact
+        h2.pull-right Contact
+        .col
 
         

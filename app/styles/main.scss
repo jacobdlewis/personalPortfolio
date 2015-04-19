@@ -8,17 +8,32 @@
   margin-bottom: 0 !important;
 }
 .profile_image {
-  height: 200px;
-  width: 200px;
+  height: 400px;
+  width: 400px;
   border-radius: 50%;
 }
 .about-me {
   margin-bottom: 20px;
   .about-me-content {
-    text-align: justify;
+    text-align: right;
+  }
+  p {
+    font-size: 22px;
+    margin-top: 80px;
   }
 }
-
+.bit-blaster {
+  p {
+    font-size: 22px;
+    margin-top: 80px;
+  }
+  img {
+    size: 400px;
+    width: 400px;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+}
 .skills {
   h2 {
     text-align: center;
@@ -26,10 +41,10 @@
   ul {
     display: block;
     list-style-type: none;
-    text-align: center;
   }
   li {
     font-size: 20px;
+    font-weight: bold;
   }
 
 }
