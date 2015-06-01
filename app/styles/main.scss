@@ -1,6 +1,4 @@
-.container {
-  margin: 0 200px;
-  }
+
 .breadcrumb {
   margin-top: 30px;
   margin-bottom: 0;
@@ -77,6 +75,15 @@
   }
 }
 
+
+/*
+***************************
+***************************
+***    small screen     ***
+***************************
+***************************
+*/
+
 @media (max-width: 600px) {
     .container {
       margin: 0;
@@ -124,6 +131,7 @@
         padding: 0;
         li {
           text-align: center;
+          font-size: 12px;
         }
       }
       .jumbotron {
