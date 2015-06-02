@@ -10,32 +10,24 @@
   }
 }
 
+.paragraph {
+  font-size: 22px;
+  margin-top: 80px;
+  font-weight: default;
+}
+
 .about-me {
   margin-bottom: 20px;
   h2 {
     text-align: right;
-  }
-  .about-me-content {
-    text-align: right;
-    font-weight: 400;
   }
   .profile_image {
   height: 400px;
   width: 400px;
   border-radius: 50%;
   }
-
-  p {
-    font-size: 22px;
-    font-weight: default;
-    margin-top: 80px;
-  }
 }
 .bit-blaster {
-  p {
-    font-size: 22px;
-    margin-top: 80px;
-  }
   img {
     size: 400px;
     width: 400px;
@@ -62,9 +54,10 @@
   }
 }
 .contact {
+  margin-top: 20px 0 0 0;
   ul {
     list-style-type: none;
-    text-align: center;
+    padding: none !important;
   }
   li {
     display: inline;
@@ -74,7 +67,6 @@
     width: 150px;
   }
 }
-
 
 /*
 ***************************

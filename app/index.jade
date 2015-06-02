@@ -7,7 +7,7 @@ html(lang='en')
     meta(name='viewport' content='width=device-width, initial-scale=1')
     link(rel='stylesheet' href='../bower_components/bootstrap/dist/css/bootstrap.css')
     link(rel='stylesheet' href='../bower_components/bootstrap/dist/css/bootstrap-theme.css')
-    link(rel='stylesheet' href='/app/assets/font-awesome-4.3.0/css/font-awesome.min.css')
+    link(rel='stylesheet' href='assets/font-awesome-4.3.0/css/font-awesome.min.css')
     link(rel='stylesheet' href='css/main.css')
   body
     div.container
@@ -25,19 +25,20 @@ html(lang='en')
 
       div.row.about-me.col-xs-12#about_me
         h2.pull-right About Me
-          div.col-md-4
-            img.profile_image(src="assets/profile_photo.png")
-          div.col-md-7.col-xs-offset-1.about-me-content
-            p I'm a web developer working in HTML, CSS, JavaScript and Ruby. I'm currently enrolled as a full-time student at the Nashville Software School, a bootcamp-style vocational school focused on training junior developers. I'm new to Nashville, coming by way of Madison, WI and Birminghan, AL. When I'm not working on development projects, you can find me on the disc golf course or playing a board game with friends.
+        div.col-md-6
+          img.profile_image(src="assets/profile_photo.png").pull-left
+        div.col-md-6
+          p.paragraph I'm a apprentice web developer at the Nashville Software School, a bootcamp-style vocational school focused on training junior developers. I'm new to Nashville, coming by way of Madison, WI and Birminghan, AL. When I'm not working on development projects, you can find me on the disc golf course or playing a board game with friends.
       .row.bit-blaster.col-xs-12#bit_blaster
         hr
         h2 Bit Blaster
         .col-md-6
-          p Bit Blaster is an arcade-style space shooter built with the Phaser.js game engine. I completed Bit Blaster in around two weeks while studying at Nashville Software School. I created the game assets with GIMP, and high scores are recorded using Firebase. 
+          p.paragraph Bit Blaster is an arcade-style space shooter built with the Phaser.js game engine. I completed Bit Blaster in around two weeks while studying at Nashville Software School. I created the game assets with GIMP, and high scores are recorded using Firebase. 
             a(href="https://bitblaster.firebaseapp.com/") Play the game.
         .col-md-6
-          a(href="https://bitblaster.firebaseapp.com/")
-            img.pull-right(src="assets/bit_blaster.png")
+          div
+            a(href="https://bitblaster.firebaseapp.com/")
+              img.pull-right(src="assets/bit_blaster.png")
       .row.col-xs-12.skills
         hr
         h2#skills Skills
@@ -51,7 +52,7 @@ html(lang='en')
                 li Ruby
             div.col-md-3.col-xs-6
               ul
-                li Ruby on Rails
+                li Rails
                 li Jade
                 li Phaser.js
                 li JQuery
@@ -67,22 +68,21 @@ html(lang='en')
                 li Mocha
                 li Chai
                 li Phantom.js
-      div.row.contact
-        .col-xs-12.col-md-12
-          hr
-          ul#contact
-            li
-              a(href="https://github.com/jacobdlewis")
-                i.fa.fa-github.fa-5x
-            li
-              a(href="https://twitter.com/?lang=en")
-                i.fa.fa-twitter.fa-5x
-            li
-              a(href="https://www.linkedin.com/in/jacoblewis")
-                i.fa.fa-linkedin.fa-5x
-            li
-              a(href="mailto:jacobdlewis@gmail.com")
-                i.fa.fa-envelope.fa-5x
-            li
-              a(href="https://medium.com/@jacobdlewis")
-                i.fa.fa-medium.fa-5x
+      div.row.col-xs-12.contact
+        hr
+        ul#contact.text-center
+          li
+            a(href="https://github.com/jacobdlewis")
+              i.fa.fa-github.fa-5x
+          li
+            a(href="https://twitter.com/?lang=en")
+              i.fa.fa-twitter.fa-5x
+          li
+            a(href="https://www.linkedin.com/in/jacoblewis")
+              i.fa.fa-linkedin.fa-5x
+          li
+            a(href="mailto:jacobdlewis@gmail.com")
+              i.fa.fa-envelope.fa-5x
+          li
+            a(href="https://medium.com/@jacobdlewis")
+              i.fa.fa-medium.fa-5x
