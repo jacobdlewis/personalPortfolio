@@ -95,7 +95,7 @@ box-shadow: 0 0 5px tomato;
   }
 }
 .contact {
-  margin-bottom: 20px;
+  margin-bottom: -10px;
   ul {
     list-style-type: none;
   }
@@ -106,6 +106,16 @@ box-shadow: 0 0 5px tomato;
     height: 150px;
     width: 150px;
     color: tomato;
+  }
+}
+.page-footer {
+  a {
+    color: tomato;
+    text-decoration: none;
+  }
+  img {
+    max-height: 40px;
+    max-width: 40px;
   }
 }
 
