@@ -26,29 +26,52 @@ html(lang='en')
             a(href="#contact") Contact
 
     .container
-      .row.col-xs-12
-        h2.pull-right About Me
-      div.row.about-me.col-xs-12#about_me
-        div.col-md-6
-          img.profile_image(src="assets/profile_photo.png")
-        div.col-md-6
-          p.paragraph I'm a apprentice web developer at the Nashville Software School, a bootcamp-style vocational school focused on training junior developers. I'm new to Nashville, coming by way of Madison, WI and Birminghan, AL. When I'm not working on development projects, you can find me on the disc golf course or playing a board game with friends.
 
-      .row.col-xs-12
-        hr
-        h2.pull-left Bit Blaster
-      .row.col-xs-12#bit_blaster
-        .col-md-6
-          p.paragraph Bit Blaster is an arcade-style space shooter built with the Phaser.js game engine. I completed Bit Blaster in around two weeks while studying at Nashville Software School. I created the game assets with GIMP, and high scores are recorded using Firebase. 
-            a(href="https://bitblaster.firebaseapp.com/") Play the game.
-        .col-md-6
-          div
-            a(href="https://bitblaster.firebaseapp.com/")
-              img.bit-blaster.pull-right(src="assets/bit_blaster.png")
+      .row.section-header
+        .col-xs-12
+          h2.pull-right#about_me About Me
 
-      .row.col-xs-12.skills
-        hr
-        h2#skills.pull-right Skills
+      .row.main-section
+        col-xs-12.about-me
+          div.col-md-6
+            img.profile_image(src="assets/profile_photo.png")
+          div.col-md-6
+            p.paragraph 
+              | I'm a web developer at 
+              a(href="http://nashvillesoftwareschool.com/", target="_blank") Nashville Software School
+              | , a bootcamp-style vocational school focused on training junior developers. I'm a recent transplant to Nashville, coming by way of Madison, WI and Birmingham, AL. I enjoy learning new technologies and writing clean, test-driven code. When I'm not working on development projects, you can find me on the disc golf course, taking walks with my dog Lucy, or playing a board game with friends.
+
+      .row
+        .col-xs-12.separator
+            hr
+
+      .row.section-header
+        .col-xs-12
+          h2.pull-left#bit_blaster Bit Blaster
+
+      .row.main-section
+        .col-xs-12
+          .col-md-6
+            p.paragraph 
+              | Bit Blaster is an arcade-style space shooter built with the 
+              a(href="http://phaser.io/", target="_blank") Phaser.js 
+              | game engine. I completed Bit Blaster for my capstone project featuring front-end technologies at Nashville Software School. Game assets were created with GIMP. High scores are recorded using Firebase, which is also used to deploy the project. 
+              a(href="https://bitblaster.firebaseapp.com/", target="_blank") Play the game here. 
+              | If you can top 50,000 points, you'll get to take on the boss.
+          .col-md-6
+            div
+              a(href="https://bitblaster.firebaseapp.com/", target="_blank")
+                .bit-blaster
+
+      .row
+        .col-xs-12.separator
+            hr
+
+      .row.section-header
+        .col-xs-12
+          h2#skills.pull-right Skills
+
+      .row.main-section
         .col-xs-12
           div.skills.jumbotron.clearfix
             div.col-md-3.col-xs-6.clearfix
@@ -76,23 +99,29 @@ html(lang='en')
                 li Chai
                 li Phantom.js
 
-      .row.col-xs-12
-        hr
-        h2.pull-left Contact
-      div.row.col-xs-12.contact
-        ul#contact.text-center
-          li
-            a(href="https://github.com/jacobdlewis")
-              i.fa.fa-github.fa-5x
-          li
-            a(href="https://twitter.com/?lang=en")
-              i.fa.fa-twitter.fa-5x
-          li
-            a(href="https://www.linkedin.com/in/jacoblewis")
-              i.fa.fa-linkedin.fa-5x
-          li
-            a(href="mailto:jacobdlewis@gmail.com")
-              i.fa.fa-envelope.fa-5x
-          li
-            a(href="https://medium.com/@jacobdlewis")
-              i.fa.fa-medium.fa-5x
+      .row
+        .col-xs-12.separator
+            hr
+
+      .row.section-header
+        .col-xs-12
+          h2.pull-left Contact
+
+      .row.main-section
+        .col-xs-12.contact
+          ul#contact.text-center
+            li
+              a(href="https://github.com/jacobdlewis", target="_blank")
+                i.fa.fa-github.fa-5x
+            li
+              a(href="https://twitter.com/?lang=en", target="_blank")
+                i.fa.fa-twitter.fa-5x
+            li
+              a(href="https://www.linkedin.com/in/jacoblewis", target="_blank")
+                i.fa.fa-linkedin.fa-5x
+            li
+              a(href="mailto:jacobdlewis@gmail.com", target="_blank")
+                i.fa.fa-envelope.fa-5x
+            li
+              a(href="https://medium.com/@jacobdlewis", target="_blank")
+                i.fa.fa-medium.fa-5x
