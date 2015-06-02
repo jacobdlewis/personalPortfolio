@@ -11,7 +11,7 @@ html(lang='en')
     link(rel='stylesheet' href='css/main.css')
   body
 
-    header.page-header.clearfix.col-xs-12
+    .col-xs-12.top-header.navbar-fixed-top
       .col-xs-6
         h1.pull-left Jacob Lewis.<span class='subheader'>web_developer<span>
       .col-xs-6
@@ -61,7 +61,7 @@ html(lang='en')
           .col-md-6
             div
               a(href="https://bitblaster.firebaseapp.com/", target="_blank")
-                .bit-blaster
+                img(src="assets/bit_blaster.png").bit-blaster.pull-right
 
       .row
         .col-xs-12.separator
@@ -125,3 +125,5 @@ html(lang='en')
             li
               a(href="https://medium.com/@jacobdlewis", target="_blank")
                 i.fa.fa-medium.fa-5x
+    script(src="js/jquery.min.js")
+    script(src="js/main.js")
