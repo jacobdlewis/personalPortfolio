@@ -20,7 +20,7 @@ module.exports = function (grunt) {
     copy: {
       main: {
         files: [
-          {expand: true, cwd: 'app/', src: ['**', '!**/*.jade', '!**/*.{sass,scss}', '!**/*.js'], dest: 'public/', filter: 'isFile'}
+          {expand: true, cwd: 'app/', src: ['**', '!**/*.jade', '!**/*.{sass,scss}', '**/*.js'], dest: 'public/', filter: 'isFile'}
         ]
       }
     },
