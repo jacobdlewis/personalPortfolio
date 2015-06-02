@@ -6,6 +6,10 @@ body {
   margin-top: 130px;
 }
 
+#bit_blaster, #contact {
+  text-align: right;
+}
+
 .jumbotron {
   background-color: tomato;
 }
@@ -21,12 +25,6 @@ body {
 .section-header {
   margin: 0 auto 0 auto;
 
-  h2 {
-    background-color: tomato;
-    padding: 10px;
-    border-radius: 10px;
-
-  }
 }
 
 .main-section {
@@ -120,46 +118,37 @@ box-shadow: 0 0 5px tomato;
 */
 
 @media (max-width: 600px) {
+    .top-header {
+      padding-top: 0px;
+    }
+
+    #about_me, #skills, #contact, #bit_blaster {
+      text-align: center;
+    }
+
     .container {
       margin: 0;
     }
-    .about-me {
-      h2 {
-        text-align: center;
-      }
-      img {
-        max-height: 150px;
-        max-width: 150px;
-        margin-top: 20px;
-      }
-      p {
-        margin-top: 20px;
-        font-size: 16px;
-        text-align: justify;
-      }
+
+    .profile_image {
+      max-height: 200px;
+      max-width: 200px;
+      margin-left: 10%;
     }
+
     .bit-blaster {
-      h2 {
-        text-align: center;
-        margin-bottom: 10px
-      }
-      img {
-        max-height: 150px;
-        max-width: 150px;
-        margin-right: 20%;
-      }
-      p {
-        margin-top: 20px;
-        font-size: 16px;
-        text-align: justify;
-      }
+      max-height: 200px;
+      max-width: 200px;
+      margin-right: 7%;
     }
     .skills {
 
-      .jumbotron {
-        padding: 5px 15px;
-        font-size: 12px;
-        font-weight: default;
+      ul {
+        padding-left: 10%;
+      }
+
+      li {
+        font-size: 16px;
       }
 
     }
