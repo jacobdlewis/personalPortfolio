@@ -21,6 +21,10 @@ html(lang='en')
           li
             a(href="#bit_blaster") Bit Blaster
           li
+            a(href="#space-race") Space Race
+          li
+            a(href="#time-logger") Time Logger
+          li
             a(href="#skills") Skills
           li
             a(href="#contact") Contact
@@ -32,13 +36,13 @@ html(lang='en')
           h2#about_me About Me
 
       .row.main-section
-        col-xs-12.about-me
+        .col-xs-12.about-me
           div.col-md-6
             img.profile_image(src="assets/profile_photo.png")
           div.col-md-6
-            p.paragraph 
+            p.paragraph
               | I'm a web developer at 
-              a(href="http://nashvillesoftwareschool.com/", target="_blank") Nashville Software School
+              a(href="http://nashvillesoftwareschool.com/", target="_blank") Nashville Software School 
               | , a bootcamp-style vocational school focused on training junior developers. I'm a recent transplant to Nashville, coming by way of Madison, WI and Birmingham, AL. I enjoy learning new technologies and writing clean, test-driven code. When I'm not working on development projects, you can find me on the disc golf course, taking walks with my dog Lucy, or playing a board game with friends.
 
       .row
@@ -50,18 +54,61 @@ html(lang='en')
           h2#bit_blaster Bit Blaster
 
       .row.main-section
+        .col-md-6.col-xs-12
+          p.paragraph
+            | Bit Blaster is an arcade-style space shooter built with the 
+            a(href="http://phaser.io/", target="_blank") Phaser.js 
+            | game engine. I completed Bit Blaster for my capstone project featuring front-end technologies at Nashville Software School. Game assets were created with GIMP. High scores are recorded using Firebase, which is also used to deploy the project. 
+            a(href="https://bitblaster.firebaseapp.com/", target="_blank") Play the game here
+            | . If you can top 50,000 points, you'll get to take on the boss.
+        .col-md-6.col-xs-12
+          div
+            a(href="https://bitblaster.firebaseapp.com/", target="_blank")
+              img(src="assets/bit_blaster.png").bit-blaster.pull-right
+
+      .row
+        .col-xs-12.separator
+            hr
+
+      .row.section-header
         .col-xs-12
-          .col-md-6
-            p.paragraph 
-              | Bit Blaster is an arcade-style space shooter built with the 
-              a(href="http://phaser.io/", target="_blank") Phaser.js 
-              | game engine. I completed Bit Blaster for my capstone project featuring front-end technologies at Nashville Software School. Game assets were created with GIMP. High scores are recorded using Firebase, which is also used to deploy the project. 
-              a(href="https://bitblaster.firebaseapp.com/", target="_blank") Play the game here. 
-              | If you can top 50,000 points, you'll get to take on the boss.
-          .col-md-6
-            div
-              a(href="https://bitblaster.firebaseapp.com/", target="_blank")
-                img(src="assets/bit_blaster.png").bit-blaster.pull-right
+          h2#space-race Space Race
+
+      .row.main-section
+        div.col-md-6.col-xs-12
+          a(href="http://space-race.herokuapp.com/", target="_blank")
+            img.space-race.pull-left(src="assets/space_race.png")
+
+        div.col-md-6.col-xs-12
+          p.paragraph
+            | During Hack Tennessee, a 48-hour hack-a-thon, our team of designers and full-stack developers created Space Race,
+            | a cooperative multiplayer game in which two teams of two race through Earth’s atmosphere. During every game, each 
+            | team’s engineer builds platforms for their teammate.  Each team’s astronaut then traverses those platforms in an 
+            | attempt to outpace their opponent without falling. The game utilizes a combination of Node, Express, and Eureca.io 
+            | to manage real-time interaction. Play the game 
+            a(href="http://space-race.herokuapp.com/") here
+            | .
+
+      .row
+        .col-xs-12.separator
+            hr
+
+      .row.section-header
+        .col-xs-12
+          h2#time-logger Time Logger
+
+      .row.main-section
+        .col-md-6.col-xs-12
+          p.paragraph
+            | I created Time Logger to help my father’s small business save time and cut down on time-logging errors. The app 
+            | replaces pen-and-paper time logging with a cloud-based solution that works across an array of devices. Graph-based 
+            | reports help employees and managers make better business decisions about how their time is spent. Try the app 
+            a(href="http://sfctimelogger.herokuapp.com/") here
+            | .
+        .col-md-6.col-xs-12
+          div
+            a(href="http://sfctimelogger.herokuapp.com/", target="_blank")
+              img(src="assets/time_logger.png").time-logger.pull-right
 
       .row
         .col-xs-12.separator
@@ -128,8 +175,8 @@ html(lang='en')
       .row
         .col.xs-12.separator.page-footer
           hr
-          h4.text-center Written with 
-            a(href="http://getbootstrap.com/", target="blank") Bootstrap. 
+          h4.text-center Written with
+            a(href="http://getbootstrap.com/", target="blank") Bootstrap.
             | Powered by my Raspberry Pi
             img(src="../assets/rasbpi_icon.ico")
     script(src="js/jquery.min.js")

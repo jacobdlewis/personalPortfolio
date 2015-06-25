@@ -83,6 +83,13 @@ box-shadow: 0 0 5px tomato;
   border-radius: 5px;
 }
 
+.space-race, .time-logger {
+  size: 300px;
+  width: 300px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
 .skills {
   ul {
     display: block;
@@ -132,7 +139,7 @@ box-shadow: 0 0 5px tomato;
       padding-top: 0px;
     }
 
-    #about_me, #skills, #contact, #bit_blaster {
+    #about_me, #skills, #contact, #bit_blaster, #space-race, #time-logger {
       text-align: center;
     }
 
@@ -149,8 +156,15 @@ box-shadow: 0 0 5px tomato;
     .bit-blaster {
       max-height: 200px;
       max-width: 200px;
-      margin-right: 7%;
+      margin-right: 20%;
     }
+
+    .space-race {
+      max-height: 200px;
+      max-width: 200px;
+      margin-left: 20%;
+    }
+
     .skills {
 
       ul {
